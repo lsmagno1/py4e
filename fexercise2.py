@@ -5,18 +5,18 @@ def computegrade (score):
  try:
     score = float(score)
     if score <0.0 or score >= 1.0:
-        print (errormessage)
+        return (errormessage)
     elif score >= 0.9:
-        print ('A')
+        return ('A')
     elif score >= 0.8:
-        print ('B')
+        return ('B')
     elif score >= 0.7:
-        print ('C')
+        return ('C')
     elif score >= 0.6:
-        print ('D')
+        return ('D')
     elif score < 0.6:
-        print ('F')
+        return ('F')
  except:
-    print(errormessage)
+    return (errormessage)
 
 computegrade (score)
